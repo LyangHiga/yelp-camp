@@ -24,10 +24,7 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
 app.use(flash());
-// password: OIw8R5z37UFa3Kms
-// To connect through termianl => mongo "mongodb+srv://lyang:OIw8R5z37UFa3Kms@cluster0-8i3pc.mongodb.net/test"
-console.log(process.env.DATABASEURL);
-mongoose.connect("mongodb+srv://lyang:OIw8R5z37UFa3Kms@cluster0-8i3pc.mongodb.net/yelp_camp?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // seedDB();
 
