@@ -26,7 +26,8 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 console.log(process.env.DATABASEURL);
-mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true, useUnifiedTopology: true })
+.catch(error => handleError(error));
 
 // seedDB();
 
