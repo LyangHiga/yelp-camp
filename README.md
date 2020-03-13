@@ -2,7 +2,7 @@
 
 Node Web app project for [Web Dev Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/)
 
-Check here: [yelp camp](http://yelp-camp--vl.herokuapp.com/campgrounds)
+Check here: [yelp camp](http://yelp-camp--vl.herokuapp.com/)
 
 ### Built with
 
